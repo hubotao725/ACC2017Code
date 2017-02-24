@@ -1,4 +1,4 @@
-function [x_opt,f_opt]=GetOptimal(N,finalPos)
+function [x_opt,f_opt,tstop]=GetOptimal(N,finalPos)
 %GetOptimal this function gets the optimal result
 %N is the length
 %final pos is the final position
