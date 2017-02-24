@@ -20,8 +20,8 @@ plot(pltY(1:N,1),pltZ(1:N,1),'k','LineWidth',1.5);
 hold off
 
 axis equal
-xlim([-0.5,5.5]);
-ylim([-0.5,5.5]);
+xlim([-0.5,15.5]);
+ylim([-1,1]);
 FontSize=7;
 xlabel('x position (m)','FontSize',FontSize);
 ylabel('z position (m)','FontSize',FontSize);
