@@ -10,12 +10,12 @@ b=SX.sym('b',8*N+1,1);
 s=SX.sym('s',N,1);
 maxS=1;
 
-
+finalPos=[15 0];%this is the final position
 [f]=CostFun(b,N);
 
 [y,z,theta]=GetDerivative(b,N);
 
-g=ConstrFun(y,z,theta,b,N);
+g=ConstrFun(y,z,theta,b,N,finalPos);
 
 nlp=SXFunction('nlp',nlpIn('x',b),nlpOut('f',f,'g',g));
 solver=NlpSolver('solver','ipopt',nlp);
